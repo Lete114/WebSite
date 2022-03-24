@@ -376,7 +376,7 @@ import:
   headBefore: # 引入到<head>之后
     - 
   headAfter: # 引入到</head>之前
-    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/custom.css">
   bodyBefore: # 引入到<body>之后
     - 
   bodyAfter: # 引入到</body>之前
