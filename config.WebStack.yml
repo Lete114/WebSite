@@ -1,0 +1,398 @@
+---
+#--------------------------------------------------------
+# Awstats-Themes-WebStack
+# 项目地址：https://github.com/lete114/WebStack
+# 演示地址：https://webstack.imlete.cn
+# 一个静态网址导航网站
+#--------------------------------------------------------
+
+## 基础配置
+title: Lete乐特 - Emmonties网址导航 # 网站昵称
+favicon: /img/favicon.ico # 网站图标
+author: Lete乐特 # 昵称
+url: https://www.imlete.cn #网址
+color: "#e58a8a" ## 可自定义颜色(目前只跳转滚动条和回到顶部按钮) 例如：#00c4b6
+image: ./images/webstack_banner_cn.png # 图片
+# 关键字
+keywords: Lete乐特,Java,JavaWeb,Java常用框架,Spring,SpringBoot,SpringMVC,MyBatis,数据库,MySQL,C#,.NET,开发工具,Git,GitHub,Gitee,(My)Eclipse,IDEA, Hexo,Linux,Maven,前端基础知识,HTML,CSS,JavaScript,jQuery,Ajax,Bootstrap,工具&#x2F;资源,教程,分享,推荐,娱乐,摄影,C#,CMD,Developer,Programmer,Coder
+# 描述
+description: 我相信我可以，但我一直在路上，所以我有无限的可能！！
+
+# 网站logo
+logo:
+  expanded: /img/Discuss.svg # 大logo
+  collapsed: /img/Discuss.svg # 小logo
+
+# 导航菜单
+hover: desc ## 鼠标悬浮显示 网址/描述 网址：site 描述：desc
+menu:
+  - name: 个人站点 # 昵称
+    icon: far fa-star # 图标
+    site: # 网站
+      - name: Lete乐特's Blog
+        url: https://blog.imlete.cn
+        img: /img/avatar.png
+        description: 一个喜欢记录的地方
+      - name: Regulex
+        url: https://regulex.imlete.cn
+        img: /img/avatar.png
+        description: 可视化正则表达式
+      - name: 玩音乐
+        url: https://music.imlete.cn
+        img: /img/avatar.png
+        description: Lete乐特音乐
+      - name: 获取用户IP
+        url: https://get-user-ip.imlete.cn
+        img: /img/avatar.png
+        description: 获取用户IP
+      - name: APIs
+        url: https://apis.vercel.app
+        img: /img/avatar.png
+        description: 获取访问者设备信息、Bing每日高清壁纸、获取网站信息，图标，标题等、获取QQ信息、QQ头像、QQ昵称、等、获取短视频信息、去水印、抖音、火山、微视、皮皮虾、最右、轻视频(bilibili)
+      - name: 网站截图
+        url: https://webstack-screenshot.vercel.app/
+        img: /img/avatar.png
+        description: 网站截图API
+  - name: 开源项目
+    icon: far fa-star
+    site:
+      - name: Discuss
+        url: https://discuss.js.org
+        img: /img/ico/discuss.ico
+        description: 一款简单，安全，免费的评论系统 | A simple, safe, free comment system
+      - name: Simple-Unique
+        url: https://github.com/Lete114/Simple-Unique
+        img: /img/ico/github.ico
+        description: 完全随机生成唯一字符串 | Completely random generation of unique strings
+      - name: WebStack-Screenshot
+        url: https://github.com/Lete114/WebStack-Screenshot
+        img: /img/ico/github.ico
+        description: 网站截图 API | Website Screenshot API
+      - name: Output-Line
+        url: https://github.com/Lete114/Output-Line
+        img: /img/ico/github.ico
+        description: 执行node程序时，控制台中输出console行号 | When executing a node program, the console outputs the console line number
+      - name: AWStats
+        url: https://github.com/lete114/AWStats
+        img: /img/ico/github.ico
+        description: 基于 NodeJS 的一个静态生成器，快来定义您的页面吧！(A static generator based on NodeJS, come to define your page!)
+      - name: Body-Data
+        url: https://github.com/Lete114/Body-Data
+        img: /img/ico/github.ico
+        description: 一个轻量、小巧的Node.js模块，用于检索 GET 或 POST 请求数据 | A lightweight, small Node.js module for retrieving GET or POST request data
+      - name: Get-User-IP
+        url: https://github.com/Lete114/Get-User-IP
+        img: /img/ico/github.ico
+        description: 一个轻量、小巧的Node.js模块，用于检索请求用户的IP地址 | A lightweight, small Node.js module to retrieve the IP address of the requesting user
+      - name: XHR-Ajax
+        url: https://github.com/Lete114/XHR-Ajax
+        img: /img/ico/github.ico
+        description: 一个简单的浏览器xhr请求模块 | A simple browser xhr request module
+      - name: API-Interface
+        url: https://github.com/Lete114/API-Interface
+        img: /img/ico/github.ico
+        description: Express写的一个api接口:获取访问者设备信息、Bing每日高清壁纸、获取网站信息，图标，标题等、获取QQ信息、QQ头像、QQ昵称、等、获取短视频信息、去水印、抖音、火山、微视、皮皮虾、最右、轻视频(bilibili)
+      - name: Loading-Script
+        url: https://github.com/Lete114/Loading-Script
+        img: /img/ico/github.ico
+        description: 动态加载JavaScript资源 | Dynamic Loading JavaScript Source
+      - name: ForIcon
+        url: https://github.com/Lete114/ForIcon
+        img: /img/ico/github.ico
+        description: 拖入软件获取当前软件的icon图标
+      - name: Hexo-theme-MengD
+        url: https://mengd.js.org/
+        img: /img/ico/mengd.gif
+        description: 一个美丽且简洁的主题 A simple, elegant, and beautiful Hexo theme
+      - name: Hexo-SEO-AutoPush
+        url: https://github.com/lete114/hexo-seo-autopush
+        img: /img/ico/github.ico
+        description: 每天自动提交url到百度和谷歌必应 Daily automatic submission of urls to baidu and Google bing
+      - name: SplitScreen
+        url: https://github.com/lete114/SplitScreen
+        img: /img/ico/github.ico
+        description: 谷歌浏览器网站分屏插件 Website split screen is Chrome Plugins
+      - name: MyBlog-Butterfly
+        url: https://github.com/lete114/MyBlog-Butterfly
+        img: /img/ico/github.ico
+        description: 一个由SpringBoot写的个人博客，博客主题使用Hexo-Butterfly A personal blog written by SpringBoot uses Butterfly as the theme of the blog
+      - name: Hexo-minify
+        url: https://github.com/lete114/hexo-minify
+        img: /img/ico/github.ico
+        description: Hexo resources compress HTML,CSS,JS （Hexo博客压缩，支持HTML、JS、CSS）
+      - name: Hexo-theme-Yilia-Pro
+        url: https://github.com/lete114/hexo-theme-yilia-pro
+        img: /img/ico/github.ico
+        description: 一个简洁优雅的hexo主题 A simple and elegant theme for hexo.
+      - name: GetThemAll
+        url: https://github.com/lete114/GetThemAll
+        img: /img/ico/github.ico
+        description: GetThemAll 汉化版，图片、视频、文件、链接谷歌浏览器插件批量下载器
+  - name: 阅读学习
+    icon: far fa-star
+    site:
+      - name: 今日热榜
+        url: https://tophub.today
+        img: /img/ico/tophub.ico
+        description: 今日热榜提供各站热榜聚合：微信、今日头条、百度、知乎、V2EX、
+      - name: 知乎
+        url: https://zhihu.com/
+        img: /img/ico/zhihu.ico
+        description: 可信赖的问答社区，以让每个人高效获得可信赖的解答为使命。
+      - name: Stack Overflow
+        url: https://stackoverflow.com/
+        img: /img/ico/stackoverflow.ico
+        description: Stack Overflow 是最大、最值得开发者学习的在线社区。他们的编程知识，并建立他们的职业生涯。
+      - name: 掘金
+        url: https://juejin.im
+        img: /img/ico/juejin.ico
+        description: 掘金是一个帮助开发者成长的社区。
+      - name: Topbook
+        url: https://topbook.cc/overview
+        img: /img/ico/topbook.png
+        description: Topbook是一本持续更新的视频书，致力于让现代人摆脱资讯的控制。
+      - name: 全历史
+        url: https://www.allhistory.com
+        img: /img/ico/allhistory.svg
+        description: 全世界，每个时期都有记载。
+      - name: 推酷
+        url: https://www.tuicool.com
+        img: /img/ico/tuicool.ico
+        description: 推酷网是面向IT人的个性化阅读网站，其背后的推荐引擎通过智能化的分析，向用户推荐感兴趣的科技资讯
+      - name: 力扣
+        url: https://leetcode-cn.com
+        img: /img/ico/leetcode.ico
+        description: 备战技术面试？力扣提供海量技术面试资源，帮助你高效提升编程技能
+  - name: 实用工具
+    icon: far fa-star
+    site:
+      - name: 小森平音效
+        url: https://taira-komori.jpn.org/freesoundcn.html
+        img: /img/ico/taira-komori.ico
+        description: 免费音效可用于你想用的项目，如电影、短片、游戏、发表、动画、舞台表演、广播剧、等等...。
+      - name: 网易见外工作台
+        url: https://jianwai.youdao.com/
+        img: /img/ico/jianwai.ico
+        description: 支持视频、字幕、音频、文档、会议
+      - name: 时光邮局
+        url: https://www.hi2future.com/
+        img: /img/ico/hi2future.ico
+        description: 给未来的自己写一封信,问问当初的梦想是不是还在坚持;给未来的爱人写一封信,让他/她看到你十年不变的爱恋
+      - name: 在线工具
+        url: https://tool.lu
+        img: /img/ico/tool.ico
+        description: 在线工具,开发人员工具,代码格式化、压缩、加密、解密
+      - name: 键盘按键值
+        url: https://www.bejson.com/othertools/keycodes/
+        img: /img/ico/bejson.ico
+        description: 在线获取键盘按键值
+      - name: Color Hunt
+        url: https://colorhunt.co
+        img: /img/ico/colorhunt.svg
+        description: Color Hunt 是一个免费和开放的平台，为色彩灵感与数以千计的时尚的手选调色板
+      - name: 字由
+        url: https://www.hellofont.cn
+        img: /img/ico/hellofont.ico
+        description: 字由是为设计师量身定做的一款字体下载管理工具
+      - name: banner 在线生成工具
+        url: https://www.bootschool.net/ascii
+        img: /img/ico/bootschool.png
+        description: springboot banner 工具实现在线生成 banner，是很棒的 springboot banner 自定义和命令行 ascii 文字工具。有了它你的项目会变得有意思
+      - name: Canva可画
+        url: https://www.canva.cn/
+        img: /img/ico/canva.ico
+        description: Canva可画在线平面设计软件_免费设计模板素材和海量正版图片 - Canva中文官网
+      - name: 在线生成UUID
+        url: http://www.uuid.online/
+        img: /img/ico/uuid.ico
+        description: uuid,GUID,uuid online,uuid generator,uuid generate,uuid在线生成,uuid生成
+      - name: 标签地球
+        url: https://www.bookmarkearth.com/
+        img: /img/ico/bookmarkearth.ico
+        description: 书签地球，中国首家浏览器书签共享平台。提供浏览器书签分享、在线制作、下载等，让书签动起来，全国最好用的浏览器书签共享平台
+      - name: 爱资料在线工具-好用的在线工具箱
+        url: http://www.toolnb.com/
+        img: /img/ico/toolnb.ico
+        description: 爱资料在线工具(toolnb.com),为开发运维提供全面的在线工具箱,已开发工具270款,包含开发工具,运维工具,常用工具,SEO站长工具等,是好用,方便的在线工具网站.
+  - name: 图片美图
+    icon: far fa-star
+    site:
+      - name: Textures for 3D
+        url: https://www.textures.com
+        img: /img/ico/textures.ico
+        description: 纹理为 3D，图形设计和 Photoshop!
+      - name: Streetwill
+        url: http://www.streetwill.co
+        img: /img/ico/streetwill.png
+        description: 每天都有好看的壁纸图片！！
+      - name: BoBoPic
+        url: https://bobopic.com/
+        img: /img/ico/bobopic.ico
+        description: 每天都有好看的壁纸图片！！
+      - name: 以图搜动漫
+        url: https://trace.moe/
+        img: /img/ico/trace.png
+        description: 只有图片，不知道动漫名？用它秒找动漫
+      - name: 动漫画风的云
+        url: https://www.ianfisherart.com/
+        img: /img/ico/ianfisherart.ico
+        description: 动漫画风的云 Ian Fisher
+      - name: Bigjpg 智能无损免费放大图片
+        url: https://bigjpg.com/
+        img: /img/ico/bigjpg.ico
+        description: Bigjpg - 使用人工智能深度卷积神经网络（CNN）智能无损免费放大图片，可放大4K级超高清分辨率（4000x4000）图片，最大32倍放大,效果秒杀PhotoZoom放大。
+      - name: waifu2x
+        url: http://waifu2x.udp.jp/
+        img: /img/ico/waifu2x.ico
+        description: 本程序使用卷积神经网络对动漫风格的图片进行放大操作（支持照片）。
+  - name: 免费API
+    icon: far fa-star
+    site:
+      - name: Lete API
+        url: apis.vercel.app
+        img: /img/avatar.png
+        description: 获取访问者设备信息、Bing每日高清壁纸、获取网站信息，图标，标题等、获取QQ信息、QQ头像、QQ昵称、等、获取短视频信息、去水印、抖音、火山、微视、皮皮虾、最右、轻视频(bilibili)
+      - name: 网站截图 API
+        url: https://webstack-screenshot.vercel.app
+        img: /img/avatar.png
+        description: 网站截图api
+      - name: 获取用户IP
+        url: https://get-user-ip.imlete.cn/
+        img: /img/avatar.png
+        description: 获取用户IP地址
+      - name: 搏天 api - 免费 api 接口平台
+        url: https://api.btstu.cn
+        img: /img/ico/btstu.ico
+        description: 搏天 api, 免费 api,api,api 接口，免费 api 接口，缥缈，随机二次元壁纸 api, 随机美女壁纸 api, 短网址生成 api
+      - name: 保罗｜API
+        url: https://api.paugram.com/
+        img: /img/ico/paugram.png
+        description: 奇趣保罗,鲍小螺,保罗,Dreamer-Paul,dreamer-paul,Paul,paul
+      - name: 墨天逸 — 随机图片API
+        url: https://api.mtyqx.cn/
+        img: /img/ico/mtyqx.ico
+        description: 随机图片API
+      - name: 网易云音乐 NodeJS 版 API
+        url: https://binaryify.github.io/NeteaseCloudMusicApi
+        img: /img/ico/NeteaseCloudMusicApi.ico
+        description: 网易云音乐 NodeJS 版 API
+      - name: 韩小韩api
+        url: https://api.vvhan.com/
+        img: /img/ico/vvhan.ico
+        description: 韩小韩api接口 - 一个免费的api接口网站
+      - name: Ten▪Api
+        url: https://tenapi.cn/
+        img: /img/ico/tenapi.ico
+        description: tenapi,免费api,公益Api,随机动漫api,一言api
+  - name: 代码托管
+    icon: far fa-star
+    site:
+      - name: Github
+        url: https://github.com/
+        img: /img/ico/github.ico
+        description: GitHub是人们构建软件的地方。超过5000万人使用GitHub来发现、创建和贡献超过1亿个项目。
+      - name: Gitee(码云)
+        url: https://gitee.com/
+        img: /img/ico/gitee.ico
+        description: 码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云
+      - name: Vercel(ZEIT)
+        url: https://vercel.com/
+        img: /img/ico/vercel.ico
+        description: Vercel combines the best developer experience with an obsessive focus on end-user performance.
+
+# 搜索功能
+search:
+  enable: true # 是否开启
+  default_search_source: https://www.baidu.com/s?wd= ## 默认搜索平台
+  default_search_icon: ./images/search/baidu.ico ## 默认搜索图标
+  search_source: # 搜索源
+    - name: 百度 # 昵称
+      img: ./images/search/baidu.ico # 源图标
+      url: https://www.baidu.com/s?wd= # 搜索平台的请求地址
+    - name: 谷歌
+      img: ./images/search/google.ico
+      url: https://www.google.com/search?q=
+    - name: 必应
+      img: ./images/search/bing.ico
+      url: https://cn.bing.com/search?q=
+    - name: npm
+      img: https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png
+      url: https://www.npmjs.com/search?q=
+    - name: Maven
+      img: https://mvnrepository.com/assets/images/7080b8b0f6f48e6fbaffd5f9d85fcc7f-favicon.ico
+      url: https://mvnrepository.com/search?q=
+    - name: 好搜
+      img: ./images/search/360.ico
+      url: https://www.so.com/s?q=
+    - name: 搜狗
+      img: ./images/search/sogou.ico
+      url: https://www.sogou.com/web?query=
+    - name: 淘宝
+      img: ./images/search/taobao.ico
+      url: https://s.taobao.com/search?q=
+    - name: 京东
+      img: ./images/search/JD.ico
+      url: http://search.jd.com/Search?keyword=
+    - name: 天猫
+      img: ./images/search/tianmao.ico
+      url: https://list.tmall.com/search_product.htm?q=
+    - name: "1688" ## 如果是数字推荐使用双引号 "" 包起来(不用双引号也可以)
+      img: ./images/search/1688.ico
+      url: https://s.1688.com/selloffer/offer_search.htm?keywords=
+    - name: 知乎
+      img: ./images/search/zhihu.ico
+      url: https://www.zhihu.com/search?type=content&q=
+    - name: 微博
+      img: ./images/search/weibo.ico
+      url: https://s.weibo.com/weibo/
+    - name: B站
+      img: ./images/search/bilibili.ico
+      url: http://search.bilibili.com/all?keyword=
+    - name: 豆瓣
+      img: ./images/search/douban.ico
+      url: https://www.douban.com/search?source=suggest&q=
+    - name: 优酷
+      img: ./images/search/youku.ico
+      url: https://so.youku.com/search_video/q_
+    - name: GitHub
+      img: ./images/search/github.ico
+      url: https://github.com/search?utf8=✓&q=
+    - name: 腾讯视频
+      img: https://v.qq.com/favicon.ico
+      url: https://v.qq.com/x/search/?q=
+
+since: 2020 # 网站开启时间
+
+## 404页面
+error_404:
+  title: webstack - 404 # 标题
+  subtitle: Oops! It looks like you're lost... # 副标题
+  description: The Page you're looking for doesn't exist or another error occurred. # 描述
+  return: webstack.imlete.cn # 返回的域名(网址)
+
+
+# 自定义引入外部css、js
+import:
+  headBefore: # 引入到<head>之后
+    - 
+  headAfter: # 引入到</head>之前
+    - <link rel="stylesheet" href="/css/custom.css">
+  bodyBefore: # 引入到<body>之后
+    - 
+  bodyAfter: # 引入到</body>之前
+    - 
+  # 例如：
+  # - <link rel="stylesheet" href="/css/index.css">
+  # - '<style>body{color: red}</style>' ## 注意由于css的‘{}’是关键符号所以需要(单/双)引号''
+  # - <script>alert(1)</script>
+
+# 访问量统计
+busuanzi:
+  enable: true
+  pv: 本站总访问量$pv
+  uv: 本站总访客数$uv
+
+# 分析(统计)
+analytics:
+  baidu: dbd0c07af29ee54341f3e9d67ffb0425 # 百度分析
+  google: # 谷歌分析

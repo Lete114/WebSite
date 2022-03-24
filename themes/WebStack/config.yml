@@ -1,0 +1,188 @@
+---
+#--------------------------------------------------------
+# Awstats-Themes-WebStack
+# 项目地址：https://github.com/lete114/WebStack
+# 演示地址：https://webstack.lete114.top/
+# 一个静态网址导航网站
+#--------------------------------------------------------
+
+## 基础配置
+title: WebStack.cc - 设计师网址导航 # 网站昵称
+favicon: /images/favicon.png # 网站图标
+author: Lete乐特 # 昵称
+url: http://www.webstack.cc/ #网址
+color: "#e58a8a" ## 可自定义颜色(目前只跳转滚动条和回到顶部按钮) 例如：#00c4b6
+image: /images/webstack_banner_cn.png # 图片
+# 关键字
+keywords: UI设计,UI设计素材,设计导航,网址导航,设计资源,创意导航,创意网站导航,设计师网址大全,设计素材大全,设计师导航,UI设计资源,优秀UI设计欣赏,设计师导航,设计师网址大全,设计师网址导航,产品经理网址导航,UX师网址导航,www.webstack.cc
+# 描述
+description: WebStack - 收集国内外优秀设计网站、UI设计资源网站、灵感创意网站、Resources网站，定时更新分享优质产品设计书签。www.webstack.cc
+
+# 网站logo
+logo:
+  expanded: /images/logo@2x.png # 大logo
+  collapsed: /images/logo-collapsed@2x.png # 小logo
+
+# 导航菜单
+hover: desc ## 鼠标悬浮显示 网址/描述 网址：site 描述：desc
+menu:
+  - name: 演示二级菜单
+    icon: far fa-star
+    submenu: # 二级菜单
+      - name: 我的网站
+        icon: far fa-star
+        site:
+          - name: 个人主页 # 网站昵称
+            url: https://lete114.top/ # 网站地址
+            img: https://www.imlete.cn/img/avatar.png # 网站图标
+            description: Lete乐特个人主页 # 网站描述
+          - name: Lete乐特's Blog
+            url: https://blog.imlete.cn/
+            img: https://www.imlete.cn/img/avatar.png
+            description: 一个喜欢记录的地方
+      - name: 开源项目
+        icon: far fa-star
+        site:
+          - name: Hexo-theme-MengD
+            url: https://mengd.js.org/
+            img: https://mengd.js.org/img/logo.gif
+            description: 一个美丽且简洁的主题 A simple, elegant, and beautiful Hexo theme
+          - name: Hexo-SEO-AutoPush
+            url: https://github.com/lete114/hexo-seo-autopush
+            img: https://github.com/favicon.ico
+            description: 每天自动提交url到百度和谷歌必应 Daily automatic submission of urls to baidu and Google bing
+  # 一级菜单
+  - name: 演示正常一级菜单 # 个人站点
+    icon: far fa-star
+    site:
+      - name: Lete乐特's Blog
+        url: https://blog.lete114.top/
+        img: https://www.imlete.cn/img/avatar.png
+        description: 一个喜欢记录的地方
+      - name: 个人主页
+        url: https://lete114.top/
+        img: https://www.imlete.cn/img/avatar.png
+        description: Lete乐特个人主页
+      - name: 玩音乐
+        url: https://music.lete114.top/
+        img: https://www.imlete.cn/img/avatar.png
+        description: Lete乐特音乐
+      - name: Butterfly博客
+        url: https://butterfly.lete114.top/
+        img: https://www.imlete.cn/img/avatar.png
+        description: Lete乐特Butterfly博客
+      - name: Yilia博客
+        url: https://yilia.lete114.top/
+        img: https://www.imlete.cn/img/avatar.png
+        description: Lete乐特Yilia博客
+
+# 搜索功能
+search:
+  enable: true # 是否开启
+  default_search_source: https://www.baidu.com/s?wd= ## 默认搜索平台
+  default_search_icon: /images/search/baidu.ico ## 默认搜索图标
+  search_source: # 搜索源
+    - name: 百度 # 昵称
+      img: /images/search/baidu.ico # 源图标
+      url: https://www.baidu.com/s?wd= # 搜索平台的请求地址
+    - name: 谷歌
+      img: /images/search/google.ico
+      url: https://www.google.com/search?q=
+    - name: 必应
+      img: /images/search/bing.ico
+      url: https://cn.bing.com/search?q=
+    - name: 好搜
+      img: /images/search/360.ico
+      url: https://www.so.com/s?q=
+    - name: 搜狗
+      img: /images/search/sogou.ico
+      url: https://www.sogou.com/web?query=
+    - name: 淘宝
+      img: /images/search/taobao.ico
+      url: https://s.taobao.com/search?q=
+    - name: 京东
+      img: /images/search/JD.ico
+      url: http://search.jd.com/Search?keyword=
+    - name: 天猫
+      img: /images/search/tianmao.ico
+      url: https://list.tmall.com/search_product.htm?q=
+    - name: "1688" ## 如果是数字推荐使用双引号 "" 包起来(不用双引号也可以)
+      img: /images/search/1688.ico
+      url: https://s.1688.com/selloffer/offer_search.htm?keywords=
+    - name: 知乎
+      img: /images/search/zhihu.ico
+      url: https://www.zhihu.com/search?type=content&q=
+    - name: 微博
+      img: /images/search/weibo.ico
+      url: https://s.weibo.com/weibo/
+    - name: B站
+      img: /images/search/bilibili.ico
+      url: http://search.bilibili.com/all?keyword=
+    - name: 豆瓣
+      img: /images/search/douban.ico
+      url: https://www.douban.com/search?source=suggest&q=
+    - name: 优酷
+      img: /images/search/youku.ico
+      url: https://so.youku.com/search_video/q_
+    - name: GitHub
+      img: /images/search/github.ico
+      url: https://github.com/search?utf8=✓&q=
+
+since: 2020 # 网站开启时间
+
+## 404页面
+error_404:
+  title: webstack - 404 # 标题
+  subtitle: Oops! It looks like you're lost... # 副标题
+  description: The Page you're looking for doesn't exist or another error occurred. # 描述
+  return: webstack.cc # 返回的域名(网址)
+
+# 自定义引入外部css、js
+import:
+  headBefore: # 引入到<head>之后
+    -
+  headAfter: # 引入到</head>之前
+    -
+  bodyBefore: # 引入到<body>之后
+    -
+  bodyAfter: # 引入到</body>之前
+    -
+  # 例如：
+  # - <link rel="stylesheet" href="/css/index.css">
+  # - '<style>body{color: red}</style>' ## 注意由于css的‘{}’是关键符号所以需要(单/双)引号''
+  # - <script>alert(1)</script>
+
+# 访问量统计
+busuanzi:
+  enable: true
+  pv: 本站总访问量$pv
+  uv: 本站总访客数$uv
+
+# 分析(统计)
+analytics:
+  baidu: # 百度分析
+  google: # 谷歌分析
+
+CDN:
+  fontawesome: /css/font-awesome.min.css
+  bootstrap_css: /css/bootstrap.css
+  bootstrap_js: /js/bootstrap.min.js
+  xenon_core: /css/xenon-core.css
+  xenon_components: /css/xenon-components.css
+  nav: /css/nav.css
+  jQuery: /js/jquery-1.11.1.min.js
+
+  # search
+  search_js: /js/search.js
+  search_css: /css/search.css
+
+  # 不蒜子
+  busuanzi: /js/busuanzi.pure.mini.js
+
+  TweenMax: /js/TweenMax.min.js
+  resizeable: /js/resizeable.js
+  joinable: /js/joinable.js
+  xenon_api: /js/xenon-api.js
+  xenon_toggles: /js/xenon-toggles.js
+  xenon_custom: /js/xenon-custom.js
+  lozad: /js/lozad.min.js

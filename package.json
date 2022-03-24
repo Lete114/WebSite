@@ -1,0 +1,21 @@
+{
+  "name": "awstats-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npx awstats generate",
+    "minify": "npx awstats minify",
+    "server": "npx awstats server",
+    "deploy": "npx awstats deploy",
+    "clean": "npx awstats clean"
+  },
+  "awstats": {
+    "version": "1.0.4"
+  },
+  "dependencies": {
+    "awstats": "latest"
+  },
+  "devDependencies": {
+    "awstats-cli": "latest"
+  }
+}
