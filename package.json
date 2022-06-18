@@ -10,12 +10,12 @@
     "clean": "npx awstats clean"
   },
   "awstats": {
-    "version": "1.0.4"
+    "version": "1.0.9"
   },
   "dependencies": {
-    "awstats": "latest"
+    "awstats": "^1.0.9"
   },
   "devDependencies": {
-    "awstats-cli": "latest"
+    "awstats-cli": "^1.0.7"
   }
 }
