@@ -1,8 +1,4 @@
-const origin = [
-  "https://www.imlete.cn",
-  "https://www.lete114.top",
-  "https://homes.vercel.app",
-];
+const origin = [];
 
 const cdn = {
   gh: {
